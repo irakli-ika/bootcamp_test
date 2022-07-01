@@ -1,0 +1,75 @@
+@import "main.css";
+
+/* left side */
+.left_side_bg {
+    background-image: url("../assets/Landing\ page-\ scrolling\ photo.png");
+}
+/* right side */
+.right_side.container {
+    position: relative;
+    width: 997px;
+    height: 1280px;
+    background-color:#FD5334;
+}
+
+.right_side .content {
+    font-family: 'Nunito', sans-serif; 
+    text-transform: uppercase;
+    position: absolute;
+    top: 265px;
+    left: 85px;
+
+}
+.right_side .content h1 {
+    font-weight: 800;
+}
+.right_side .content h1:nth-child(2) {
+    font-weight: 900;
+}
+.right_side .content h1,
+.right_side .content h1:nth-child(2) {
+    font-size: 80px;
+    line-height: 109px;
+    color: #FFFFFF;
+}
+.right_side .content h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #212529;
+}
+.right_side .content > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+/* button */
+.button {
+    position: absolute;
+    top: 335px;
+    
+}
+.button a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #212529;
+    border-style: solid;
+    border-color: #FD5334;
+    border-width: 4px;
+    padding: 13px 24px;
+    border-radius: 8px;
+}
+.button a:hover {
+    border-color: #C2A5F9;
+    border-style: solid;
+    border-width: 4px;
+}
