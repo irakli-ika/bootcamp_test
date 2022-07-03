@@ -1,8 +1,7 @@
 import validator from "./formValidate.js";
 
-const inputValue = document.querySelectorAll(".inputValue")
-// error array
-const errors = []
+const inputValues = document.querySelectorAll(".inputValue")
+
 // step
 const step = document.querySelector(".first_step .number")
 
@@ -16,18 +15,15 @@ submit.addEventListener("submit", ()=> {
     const email = document.getElementById("email");
     const phone = document.getElementById("phone");
     const date = document.getElementById("date");
+    const success = document.querySelectorAll(".success")
 
-    validator(name, email, phone, date, errors)
-    console.log(errors);
+    validator(name, email, phone, date, success)
 })
-
-
-
 // save input value in localStorage
-inputValue.forEach(item => {
+inputValues.forEach(item => {
     item.addEventListener("input", () => {
         localStorage.setItem(item.name, item.value);
-        
+
         // change step style
         if (item.value.length > 0){
             step.classList.add("active")
@@ -36,6 +32,6 @@ inputValue.forEach(item => {
     if (localStorage.getItem(item.name)){
         step.classList.add("active")
         item.value =localStorage.getItem(item.name)
+        
     }
 });
-
